@@ -1,15 +1,14 @@
 function receivesAFunction(cb){
 cb();
-return `${cb()}`;
 };
 
 function returnsANamedFunction(){
-    return returnsAnAnonymousFunction();
+    function returnFunction(){};
+    return returnFunction
 }
 
 
 
 function returnsAnAnonymousFunction(){
- 
    return function(){}
 }
